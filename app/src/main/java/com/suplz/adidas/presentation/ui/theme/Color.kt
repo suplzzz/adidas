@@ -1,4 +1,4 @@
-package com.suplz.adidas.ui.theme
+package com.suplz.adidas.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

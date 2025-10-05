@@ -12,13 +12,14 @@ android {
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.suplz.adidas"
+        applicationId = "ru.gishackathon.app0507"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
     }
 
     buildTypes {
@@ -72,4 +73,7 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
+    implementation(libs.kotlinx.datetime)
+    implementation(libs.logging.interceptor)
+    implementation(libs.sdk.full)
 }
