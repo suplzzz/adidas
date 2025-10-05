@@ -12,11 +12,13 @@ import androidx.compose.material3.TopAppBar
 import com.suplz.adidas.presentation.navigation.AppNavigation
 import com.suplz.adidas.presentation.ui.theme.AdidasTheme
 import dagger.hilt.android.AndroidEntryPoint
+import ru.dgis.sdk.DGis
 
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        DGis.initialize(this)
         super.onCreate(savedInstanceState)
         setContent {
             AdidasTheme {
